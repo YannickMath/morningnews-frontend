@@ -30,7 +30,7 @@ function Header() {
 			alert("Missing or empty fields.");
 			return;
 		  }
-		fetch('http://localhost:3000/users/signup', {
+		fetch('https://morningnews-backend-gilt.vercel.app/users/signup', {
 			method: 'POST',
 			headers: { 'Content-Type': 'application/json' },
 			body: JSON.stringify({ username: signUpUsername, password: signUpPassword }),
@@ -51,7 +51,7 @@ function Header() {
 			return;
 		  }
 
-		fetch('http://localhost:3000/users/signin', {
+		fetch('https://morningnews-backend-gilt.vercel.app/users/signin', {
 			method: 'POST',
 			headers: { 'Content-Type': 'application/json' },
 			body: JSON.stringify({ username: signInUsername, password: signInPassword }),
